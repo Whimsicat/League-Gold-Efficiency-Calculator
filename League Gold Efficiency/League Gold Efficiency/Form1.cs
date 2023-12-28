@@ -35,16 +35,12 @@ namespace League_Gold_Efficiency
 
         private void LeagueGoldEfficiency_Load(object sender, EventArgs e)
         {
-            
+            Reset();
 
 
         }
-
-        private void btnReset_Click(object sender, EventArgs e)
+        private void Reset()
         {
-            //Clear Champ Item List
-            btnRemoveAll.PerformClick();
-
             //Champion Inputs
             cboxChampion.SelectedIndex = 0;
             nudChampionLevel.Value = 1;
@@ -73,8 +69,8 @@ namespace League_Gold_Efficiency
             lblMagicPenetrationFlat.Text = "0";
             lblHealShieldPower.Text = "0%";
             lblCriticalStrikeChance.Text = "0%";
-            lblCriticalStrikeDamage.Text = "150%";
-            
+            lblCriticalStrikeDamage.Text = "0%";
+
             //First Half of Stat Selector
             chkboxHealth.Checked = false;
             chkboxHealthRegen.Checked = false;
@@ -98,6 +94,7 @@ namespace League_Gold_Efficiency
             chkboxAttackSpeed.Checked = false;
             chkboxLifeSteal.Checked = false;
             chkboxCrticialStrikeChance.Checked = false;
+            chkBoxCriticalStrikeDamage.Checked = false;
 
             //Default Champion Abilities/Items With Scaling Selected
             rbtnScaling.Checked = true;
@@ -105,9 +102,40 @@ namespace League_Gold_Efficiency
             //Hide Champion Box
             rbtnDisable.Checked = true;
 
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            Reset();
 
         }
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void btnItemTuner_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Specific Champion Enabler Group Box
+        private void rbtnEnable_CheckedChanged(object sender, EventArgs e)
+        {
+            gboxChampion.Show();
+        }
+
+        private void rbtnDisable_CheckedChanged(object sender, EventArgs e)
+        {
+            gboxChampion.Hide();
+        }
+        //Champion Group Box
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+
+        }
         private void btnRemoveItem_Click(object sender, EventArgs e)
         {
 
@@ -118,32 +146,43 @@ namespace League_Gold_Efficiency
 
         }
 
-        private void btnAddItem_Click(object sender, EventArgs e)
+        private void cboxChampion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Collect Champion Base Stats, Champion Abilities, Champion Growth, Champion Rules
+
+            //Unusual Champs modify nud of levels: udyr raise cap to 6, yuumi start with w and can get q/e, etc.
+
+        }
+
+        private void nudChampionLevel_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnPassive_Click(object sender, EventArgs e)
+        private void nudQLevel_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnQ_Click(object sender, EventArgs e)
+        private void nudWLevel_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnW_Click(object sender, EventArgs e)
+        private void nudELevel_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnE_Click(object sender, EventArgs e)
+        private void nudRLevel_ValueChanged(object sender, EventArgs e)
         {
 
         }
+        private void btnRunes_Click(object sender, EventArgs e)
+        {
 
-        private void btnR_Click(object sender, EventArgs e)
+        }
+        private void btnRuneTuner_Click(object sender, EventArgs e)
         {
 
         }
@@ -247,5 +286,42 @@ namespace League_Gold_Efficiency
         {
 
         }
+
+        //Abilities & Items Calculations Group Box
+        private void rbtnStats_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnScaling_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void btnPassive_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQ_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnW_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

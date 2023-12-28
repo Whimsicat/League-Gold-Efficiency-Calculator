@@ -31,6 +31,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkBoxCriticalStrikeDamage = new System.Windows.Forms.CheckBox();
             this.chkboxCrticialStrikeChance = new System.Windows.Forms.CheckBox();
             this.chkboxMana = new System.Windows.Forms.CheckBox();
             this.chkboxManaRegen = new System.Windows.Forms.CheckBox();
@@ -58,6 +59,9 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.gboxChampion = new System.Windows.Forms.GroupBox();
+            this.btnRuneTuner = new System.Windows.Forms.Button();
+            this.btnRunes = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             this.lblCriticalStrikeDamage = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.lblCriticalStrikeChance = new System.Windows.Forms.Label();
@@ -65,6 +69,7 @@
             this.lblMagicPenetrationFlat = new System.Windows.Forms.Label();
             this.lblHealthRegen = new System.Windows.Forms.Label();
             this.lblHealth = new System.Windows.Forms.Label();
+            this.btnAddItem = new System.Windows.Forms.Button();
             this.lblMagicPenetrationPercent = new System.Windows.Forms.Label();
             this.lblLethality = new System.Windows.Forms.Label();
             this.lblArmorPenetrationPercent = new System.Windows.Forms.Label();
@@ -99,6 +104,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.gboxAbilityCalculations = new System.Windows.Forms.GroupBox();
+            this.rbtnStats = new System.Windows.Forms.RadioButton();
+            this.rbtnScaling = new System.Windows.Forms.RadioButton();
             this.btnR = new System.Windows.Forms.Button();
             this.btnPassive = new System.Windows.Forms.Button();
             this.btnW = new System.Windows.Forms.Button();
@@ -119,13 +126,8 @@
             this.btnRemoveItem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cboxChampion = new System.Windows.Forms.ComboBox();
-            this.btnAddItem = new System.Windows.Forms.Button();
             this.lsboxItems = new System.Windows.Forms.ListBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.rbtnScaling = new System.Windows.Forms.RadioButton();
-            this.rbtnStats = new System.Windows.Forms.RadioButton();
-            this.btnRunes = new System.Windows.Forms.Button();
-            this.btnItemStacks = new System.Windows.Forms.Button();
+            this.btnItemTuner = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.gboxSpecificChampion.SuspendLayout();
             this.gboxChampion.SuspendLayout();
@@ -141,6 +143,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(1228, 530);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 0;
             // 
@@ -155,6 +158,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkBoxCriticalStrikeDamage);
             this.groupBox1.Controls.Add(this.chkboxCrticialStrikeChance);
             this.groupBox1.Controls.Add(this.chkboxMana);
             this.groupBox1.Controls.Add(this.chkboxManaRegen);
@@ -181,6 +185,16 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stat Selector";
+            // 
+            // chkBoxCriticalStrikeDamage
+            // 
+            this.chkBoxCriticalStrikeDamage.AutoSize = true;
+            this.chkBoxCriticalStrikeDamage.Location = new System.Drawing.Point(256, 281);
+            this.chkBoxCriticalStrikeDamage.Name = "chkBoxCriticalStrikeDamage";
+            this.chkBoxCriticalStrikeDamage.Size = new System.Drawing.Size(162, 20);
+            this.chkBoxCriticalStrikeDamage.TabIndex = 20;
+            this.chkBoxCriticalStrikeDamage.Text = "Critical Strike Damage";
+            this.chkBoxCriticalStrikeDamage.UseVisualStyleBackColor = true;
             // 
             // chkboxCrticialStrikeChance
             // 
@@ -403,6 +417,7 @@
             this.rbtnDisable.TabStop = true;
             this.rbtnDisable.Text = "Disable";
             this.rbtnDisable.UseVisualStyleBackColor = true;
+            this.rbtnDisable.CheckedChanged += new System.EventHandler(this.rbtnDisable_CheckedChanged);
             // 
             // rbtnEnable
             // 
@@ -414,6 +429,7 @@
             this.rbtnEnable.TabStop = true;
             this.rbtnEnable.Text = "Enable";
             this.rbtnEnable.UseVisualStyleBackColor = true;
+            this.rbtnEnable.CheckedChanged += new System.EventHandler(this.rbtnEnable_CheckedChanged);
             // 
             // btnMinimize
             // 
@@ -423,6 +439,7 @@
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.Text = "Minimize";
             this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnClose
             // 
@@ -432,6 +449,7 @@
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnReset
             // 
@@ -445,7 +463,7 @@
             // 
             // gboxChampion
             // 
-            this.gboxChampion.Controls.Add(this.btnItemStacks);
+            this.gboxChampion.Controls.Add(this.btnRuneTuner);
             this.gboxChampion.Controls.Add(this.btnRunes);
             this.gboxChampion.Controls.Add(this.label17);
             this.gboxChampion.Controls.Add(this.lblCriticalStrikeDamage);
@@ -455,6 +473,7 @@
             this.gboxChampion.Controls.Add(this.lblMagicPenetrationFlat);
             this.gboxChampion.Controls.Add(this.lblHealthRegen);
             this.gboxChampion.Controls.Add(this.lblHealth);
+            this.gboxChampion.Controls.Add(this.btnAddItem);
             this.gboxChampion.Controls.Add(this.lblMagicPenetrationPercent);
             this.gboxChampion.Controls.Add(this.lblLethality);
             this.gboxChampion.Controls.Add(this.lblArmorPenetrationPercent);
@@ -511,14 +530,44 @@
             this.gboxChampion.TabStop = false;
             this.gboxChampion.Text = "Champion";
             // 
+            // btnRuneTuner
+            // 
+            this.btnRuneTuner.Location = new System.Drawing.Point(661, 202);
+            this.btnRuneTuner.Name = "btnRuneTuner";
+            this.btnRuneTuner.Size = new System.Drawing.Size(93, 23);
+            this.btnRuneTuner.TabIndex = 82;
+            this.btnRuneTuner.Text = "Rune Tuner";
+            this.btnRuneTuner.UseVisualStyleBackColor = true;
+            this.btnRuneTuner.Click += new System.EventHandler(this.btnRuneTuner_Click);
+            // 
+            // btnRunes
+            // 
+            this.btnRunes.Location = new System.Drawing.Point(670, 173);
+            this.btnRunes.Name = "btnRunes";
+            this.btnRunes.Size = new System.Drawing.Size(75, 23);
+            this.btnRunes.TabIndex = 81;
+            this.btnRunes.Text = "Runes";
+            this.btnRunes.UseVisualStyleBackColor = true;
+            this.btnRunes.Click += new System.EventHandler(this.btnRunes_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(326, 56);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(211, 16);
+            this.label17.TabIndex = 80;
+            this.label17.Text = "Hover To See Base Stats + Bonus";
+            // 
             // lblCriticalStrikeDamage
             // 
             this.lblCriticalStrikeDamage.AutoSize = true;
             this.lblCriticalStrikeDamage.Location = new System.Drawing.Point(543, 246);
             this.lblCriticalStrikeDamage.Name = "lblCriticalStrikeDamage";
-            this.lblCriticalStrikeDamage.Size = new System.Drawing.Size(40, 16);
+            this.lblCriticalStrikeDamage.Size = new System.Drawing.Size(26, 16);
             this.lblCriticalStrikeDamage.TabIndex = 79;
-            this.lblCriticalStrikeDamage.Text = "150%";
+            this.lblCriticalStrikeDamage.Text = "0%";
             this.lblCriticalStrikeDamage.MouseHover += new System.EventHandler(this.lblCriticalStrikeDamage_MouseHover);
             // 
             // label47
@@ -579,6 +628,16 @@
             this.lblHealth.TabIndex = 73;
             this.lblHealth.Text = "0";
             this.lblHealth.MouseHover += new System.EventHandler(this.lblHealth_MouseHover);
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.Location = new System.Drawing.Point(91, 353);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(75, 23);
+            this.btnAddItem.TabIndex = 8;
+            this.btnAddItem.Text = "Add Item";
+            this.btnAddItem.UseVisualStyleBackColor = true;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // lblMagicPenetrationPercent
             // 
@@ -907,6 +966,30 @@
             this.gboxAbilityCalculations.TabStop = false;
             this.gboxAbilityCalculations.Text = "Abilities/Items Calculations";
             // 
+            // rbtnStats
+            // 
+            this.rbtnStats.AutoSize = true;
+            this.rbtnStats.Location = new System.Drawing.Point(236, 29);
+            this.rbtnStats.Name = "rbtnStats";
+            this.rbtnStats.Size = new System.Drawing.Size(173, 20);
+            this.rbtnStats.TabIndex = 29;
+            this.rbtnStats.TabStop = true;
+            this.rbtnStats.Text = "Abilities/Items With Stats";
+            this.rbtnStats.UseVisualStyleBackColor = true;
+            this.rbtnStats.CheckedChanged += new System.EventHandler(this.rbtnStats_CheckedChanged);
+            // 
+            // rbtnScaling
+            // 
+            this.rbtnScaling.AutoSize = true;
+            this.rbtnScaling.Location = new System.Drawing.Point(6, 29);
+            this.rbtnScaling.Name = "rbtnScaling";
+            this.rbtnScaling.Size = new System.Drawing.Size(188, 20);
+            this.rbtnScaling.TabIndex = 28;
+            this.rbtnScaling.TabStop = true;
+            this.rbtnScaling.Text = "Abilities/Items With Scaling";
+            this.rbtnScaling.UseVisualStyleBackColor = true;
+            this.rbtnScaling.CheckedChanged += new System.EventHandler(this.rbtnScaling_CheckedChanged);
+            // 
             // btnR
             // 
             this.btnR.Location = new System.Drawing.Point(330, 78);
@@ -1004,6 +1087,7 @@
             this.nudRLevel.Name = "nudRLevel";
             this.nudRLevel.Size = new System.Drawing.Size(120, 22);
             this.nudRLevel.TabIndex = 18;
+            this.nudRLevel.ValueChanged += new System.EventHandler(this.nudRLevel_ValueChanged);
             // 
             // nudWLevel
             // 
@@ -1016,6 +1100,7 @@
             this.nudWLevel.Name = "nudWLevel";
             this.nudWLevel.Size = new System.Drawing.Size(120, 22);
             this.nudWLevel.TabIndex = 17;
+            this.nudWLevel.ValueChanged += new System.EventHandler(this.nudWLevel_ValueChanged);
             // 
             // nudELevel
             // 
@@ -1028,6 +1113,7 @@
             this.nudELevel.Name = "nudELevel";
             this.nudELevel.Size = new System.Drawing.Size(120, 22);
             this.nudELevel.TabIndex = 16;
+            this.nudELevel.ValueChanged += new System.EventHandler(this.nudELevel_ValueChanged);
             // 
             // nudQLevel
             // 
@@ -1040,6 +1126,7 @@
             this.nudQLevel.Name = "nudQLevel";
             this.nudQLevel.Size = new System.Drawing.Size(120, 22);
             this.nudQLevel.TabIndex = 15;
+            this.nudQLevel.ValueChanged += new System.EventHandler(this.nudQLevel_ValueChanged);
             // 
             // nudChampionLevel
             // 
@@ -1062,6 +1149,7 @@
             0,
             0,
             0});
+            this.nudChampionLevel.ValueChanged += new System.EventHandler(this.nudChampionLevel_ValueChanged);
             // 
             // label3
             // 
@@ -1119,16 +1207,7 @@
             this.cboxChampion.Name = "cboxChampion";
             this.cboxChampion.Size = new System.Drawing.Size(184, 24);
             this.cboxChampion.TabIndex = 0;
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.Location = new System.Drawing.Point(538, 502);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(75, 23);
-            this.btnAddItem.TabIndex = 8;
-            this.btnAddItem.Text = "Add Item";
-            this.btnAddItem.UseVisualStyleBackColor = true;
-            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
+            this.cboxChampion.SelectedIndexChanged += new System.EventHandler(this.cboxChampion_SelectedIndexChanged);
             // 
             // lsboxItems
             // 
@@ -1139,61 +1218,22 @@
             this.lsboxItems.Size = new System.Drawing.Size(474, 180);
             this.lsboxItems.TabIndex = 9;
             // 
-            // label17
+            // btnItemTuner
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(326, 56);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(211, 16);
-            this.label17.TabIndex = 80;
-            this.label17.Text = "Hover To See Base Stats + Bonus";
-            // 
-            // rbtnScaling
-            // 
-            this.rbtnScaling.AutoSize = true;
-            this.rbtnScaling.Location = new System.Drawing.Point(6, 29);
-            this.rbtnScaling.Name = "rbtnScaling";
-            this.rbtnScaling.Size = new System.Drawing.Size(188, 20);
-            this.rbtnScaling.TabIndex = 28;
-            this.rbtnScaling.TabStop = true;
-            this.rbtnScaling.Text = "Abilities/Items With Scaling";
-            this.rbtnScaling.UseVisualStyleBackColor = true;
-            // 
-            // rbtnStats
-            // 
-            this.rbtnStats.AutoSize = true;
-            this.rbtnStats.Location = new System.Drawing.Point(236, 29);
-            this.rbtnStats.Name = "rbtnStats";
-            this.rbtnStats.Size = new System.Drawing.Size(173, 20);
-            this.rbtnStats.TabIndex = 29;
-            this.rbtnStats.TabStop = true;
-            this.rbtnStats.Text = "Abilities/Items With Stats";
-            this.rbtnStats.UseVisualStyleBackColor = true;
-            // 
-            // btnRunes
-            // 
-            this.btnRunes.Location = new System.Drawing.Point(670, 173);
-            this.btnRunes.Name = "btnRunes";
-            this.btnRunes.Size = new System.Drawing.Size(75, 23);
-            this.btnRunes.TabIndex = 81;
-            this.btnRunes.Text = "Runes";
-            this.btnRunes.UseVisualStyleBackColor = true;
-            // 
-            // btnItemStacks
-            // 
-            this.btnItemStacks.Location = new System.Drawing.Point(661, 202);
-            this.btnItemStacks.Name = "btnItemStacks";
-            this.btnItemStacks.Size = new System.Drawing.Size(93, 23);
-            this.btnItemStacks.TabIndex = 82;
-            this.btnItemStacks.Text = "Item Stacks";
-            this.btnItemStacks.UseVisualStyleBackColor = true;
+            this.btnItemTuner.Location = new System.Drawing.Point(517, 499);
+            this.btnItemTuner.Name = "btnItemTuner";
+            this.btnItemTuner.Size = new System.Drawing.Size(93, 23);
+            this.btnItemTuner.TabIndex = 83;
+            this.btnItemTuner.Text = "Item Tuner";
+            this.btnItemTuner.UseVisualStyleBackColor = true;
+            this.btnItemTuner.Click += new System.EventHandler(this.btnItemTuner_Click);
             // 
             // LeagueGoldEfficiency
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1408, 581);
+            this.Controls.Add(this.btnItemTuner);
             this.Controls.Add(this.lsboxItems);
             this.Controls.Add(this.gboxChampion);
             this.Controls.Add(this.btnReset);
@@ -1203,7 +1243,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnAddItem);
             this.Name = "LeagueGoldEfficiency";
             this.Text = "League Gold Efficiency Calculator";
             this.Load += new System.EventHandler(this.LeagueGoldEfficiency_Load);
@@ -1323,8 +1362,10 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.RadioButton rbtnStats;
         private System.Windows.Forms.RadioButton rbtnScaling;
-        private System.Windows.Forms.Button btnItemStacks;
+        private System.Windows.Forms.Button btnRuneTuner;
         private System.Windows.Forms.Button btnRunes;
+        private System.Windows.Forms.CheckBox chkBoxCriticalStrikeDamage;
+        private System.Windows.Forms.Button btnItemTuner;
     }
 }
 

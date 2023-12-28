@@ -1,0 +1,11 @@
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\bin\Debug\League Gold Efficiency.exe.config
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\bin\Debug\League Gold Efficiency.exe
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\bin\Debug\League Gold Efficiency.pdb
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League Gold Efficiency.csproj.AssemblyReference.cache
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League Gold Efficiency.csproj.SuggestedBindingRedirects.cache
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League_Gold_Efficiency.LeagueGoldEfficiency.resources
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League_Gold_Efficiency.Properties.Resources.resources
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League Gold Efficiency.csproj.GenerateResource.cache
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League Gold Efficiency.csproj.CoreCompileInputs.cache
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League Gold Efficiency.exe
+C:\Users\lionh\OneDrive\Desktop\git\League-Gold-Efficiency-Calculator\League Gold Efficiency\League Gold Efficiency\obj\Debug\League Gold Efficiency.pdb
