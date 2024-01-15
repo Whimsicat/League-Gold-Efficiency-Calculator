@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tBoxLeaguePatch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpBoxStatSelector = new System.Windows.Forms.GroupBox();
+            this.chkBoxTenacity = new System.Windows.Forms.CheckBox();
             this.chkBoxCriticalStrikeDamage = new System.Windows.Forms.CheckBox();
             this.chkboxCrticialStrikeChance = new System.Windows.Forms.CheckBox();
             this.chkboxMana = new System.Windows.Forms.CheckBox();
@@ -52,144 +53,138 @@
             this.chkboxAbilityHaste = new System.Windows.Forms.CheckBox();
             this.chkboxAbilityPower = new System.Windows.Forms.CheckBox();
             this.chkboxAttackDamage = new System.Windows.Forms.CheckBox();
-            this.gboxSpecificChampion = new System.Windows.Forms.GroupBox();
-            this.rbtnDisable = new System.Windows.Forms.RadioButton();
-            this.rbtnEnable = new System.Windows.Forms.RadioButton();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.gboxChampion = new System.Windows.Forms.GroupBox();
-            this.btnRuneTuner = new System.Windows.Forms.Button();
-            this.btnRunes = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lsboxItems = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tBoxGoldCost = new System.Windows.Forms.TextBox();
+            this.grpBoxMapSelector = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.grpBoxItemControls = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAddItem = new System.Windows.Forms.Button();
+            this.btnRemoveAt = new System.Windows.Forms.Button();
+            this.btnRemoveAll = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.grpBoxItemStatsProvided = new System.Windows.Forms.GroupBox();
+            this.lblTenacity = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblMovementSpeedPercent = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.lblCriticalStrikeDamage = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.lblCriticalStrikeChance = new System.Windows.Forms.Label();
             this.lblHealShieldPower = new System.Windows.Forms.Label();
             this.lblMagicPenetrationFlat = new System.Windows.Forms.Label();
             this.lblHealthRegen = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.lblHealth = new System.Windows.Forms.Label();
-            this.btnAddItem = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.lblMagicPenetrationPercent = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.lblLethality = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblArmorPenetrationPercent = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.lblMovementSpeed = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.lblOmnivamp = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.lblLifeSteal = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.lblAbilityHaste = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.lblAbilityPower = new System.Windows.Forms.Label();
+            this.label335 = new System.Windows.Forms.Label();
             this.lblAttackSpeed = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
             this.lblAttackDamage = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.lblManaRegen = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.lblMana = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.lblMagicResist = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.lblArmor = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label335 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.gboxAbilityCalculations = new System.Windows.Forms.GroupBox();
-            this.rbtnStats = new System.Windows.Forms.RadioButton();
-            this.rbtnScaling = new System.Windows.Forms.RadioButton();
-            this.btnR = new System.Windows.Forms.Button();
-            this.btnPassive = new System.Windows.Forms.Button();
-            this.btnW = new System.Windows.Forms.Button();
-            this.btnQ = new System.Windows.Forms.Button();
-            this.btnE = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nudRLevel = new System.Windows.Forms.NumericUpDown();
-            this.nudWLevel = new System.Windows.Forms.NumericUpDown();
-            this.nudELevel = new System.Windows.Forms.NumericUpDown();
-            this.nudQLevel = new System.Windows.Forms.NumericUpDown();
-            this.nudChampionLevel = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnRemoveAll = new System.Windows.Forms.Button();
-            this.lsboxChampItems = new System.Windows.Forms.ListBox();
-            this.btnRemoveItem = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cboxChampion = new System.Windows.Forms.ComboBox();
-            this.lsboxItems = new System.Windows.Forms.ListBox();
-            this.btnItemTuner = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.gboxSpecificChampion.SuspendLayout();
-            this.gboxChampion.SuspendLayout();
-            this.gboxAbilityCalculations.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudWLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudELevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudChampionLevel)).BeginInit();
+            this.grpBoxStatSelector.SuspendLayout();
+            this.grpBoxMapSelector.SuspendLayout();
+            this.grpBoxItemControls.SuspendLayout();
+            this.grpBoxItemStatsProvided.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tBoxLeaguePatch
             // 
-            this.textBox1.Location = new System.Drawing.Point(1228, 530);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.tBoxLeaguePatch.Location = new System.Drawing.Point(1292, 555);
+            this.tBoxLeaguePatch.Name = "tBoxLeaguePatch";
+            this.tBoxLeaguePatch.ReadOnly = true;
+            this.tBoxLeaguePatch.Size = new System.Drawing.Size(100, 22);
+            this.tBoxLeaguePatch.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1133, 536);
+            this.label1.Location = new System.Drawing.Point(1193, 561);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "League Patch:";
             // 
-            // groupBox1
+            // grpBoxStatSelector
             // 
-            this.groupBox1.Controls.Add(this.chkBoxCriticalStrikeDamage);
-            this.groupBox1.Controls.Add(this.chkboxCrticialStrikeChance);
-            this.groupBox1.Controls.Add(this.chkboxMana);
-            this.groupBox1.Controls.Add(this.chkboxManaRegen);
-            this.groupBox1.Controls.Add(this.chkboxHealthRegen);
-            this.groupBox1.Controls.Add(this.chkboxHealth);
-            this.groupBox1.Controls.Add(this.chkboxHealShieldPower);
-            this.groupBox1.Controls.Add(this.chkboxMovementSpeedPercent);
-            this.groupBox1.Controls.Add(this.chkboxMovementSpeedFlat);
-            this.groupBox1.Controls.Add(this.chkboxOmnivamp);
-            this.groupBox1.Controls.Add(this.chkboxMagicPenetrationFlat);
-            this.groupBox1.Controls.Add(this.chkboxMagicPenetrationPercent);
-            this.groupBox1.Controls.Add(this.chkboxMagicResist);
-            this.groupBox1.Controls.Add(this.chkboxLethality);
-            this.groupBox1.Controls.Add(this.chkboxArmorPenetrationPercent);
-            this.groupBox1.Controls.Add(this.chkboxArmor);
-            this.groupBox1.Controls.Add(this.chkboxLifeSteal);
-            this.groupBox1.Controls.Add(this.chkboxAttackSpeed);
-            this.groupBox1.Controls.Add(this.chkboxAbilityHaste);
-            this.groupBox1.Controls.Add(this.chkboxAbilityPower);
-            this.groupBox1.Controls.Add(this.chkboxAttackDamage);
-            this.groupBox1.Location = new System.Drawing.Point(37, 53);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(474, 311);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Stat Selector";
+            this.grpBoxStatSelector.Controls.Add(this.chkBoxTenacity);
+            this.grpBoxStatSelector.Controls.Add(this.chkBoxCriticalStrikeDamage);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxCrticialStrikeChance);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxMana);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxManaRegen);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxHealthRegen);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxHealth);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxHealShieldPower);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxMagicPenetrationFlat);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxMagicPenetrationPercent);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxMovementSpeedPercent);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxOmnivamp);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxMagicResist);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxLethality);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxArmorPenetrationPercent);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxMovementSpeedFlat);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxArmor);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxLifeSteal);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxAttackSpeed);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxAbilityPower);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxAttackDamage);
+            this.grpBoxStatSelector.Controls.Add(this.chkboxAbilityHaste);
+            this.grpBoxStatSelector.Location = new System.Drawing.Point(37, 53);
+            this.grpBoxStatSelector.Name = "grpBoxStatSelector";
+            this.grpBoxStatSelector.Size = new System.Drawing.Size(488, 311);
+            this.grpBoxStatSelector.TabIndex = 2;
+            this.grpBoxStatSelector.TabStop = false;
+            this.grpBoxStatSelector.Text = "Stat Selector";
+            // 
+            // chkBoxTenacity
+            // 
+            this.chkBoxTenacity.AutoSize = true;
+            this.chkBoxTenacity.Location = new System.Drawing.Point(253, 99);
+            this.chkBoxTenacity.Name = "chkBoxTenacity";
+            this.chkBoxTenacity.Size = new System.Drawing.Size(81, 20);
+            this.chkBoxTenacity.TabIndex = 21;
+            this.chkBoxTenacity.Text = "Tenacity";
+            this.chkBoxTenacity.UseVisualStyleBackColor = true;
             // 
             // chkBoxCriticalStrikeDamage
             // 
             this.chkBoxCriticalStrikeDamage.AutoSize = true;
-            this.chkBoxCriticalStrikeDamage.Location = new System.Drawing.Point(256, 281);
+            this.chkBoxCriticalStrikeDamage.Location = new System.Drawing.Point(253, 281);
             this.chkBoxCriticalStrikeDamage.Name = "chkBoxCriticalStrikeDamage";
             this.chkBoxCriticalStrikeDamage.Size = new System.Drawing.Size(162, 20);
             this.chkBoxCriticalStrikeDamage.TabIndex = 20;
@@ -199,7 +194,7 @@
             // chkboxCrticialStrikeChance
             // 
             this.chkboxCrticialStrikeChance.AutoSize = true;
-            this.chkboxCrticialStrikeChance.Location = new System.Drawing.Point(256, 255);
+            this.chkboxCrticialStrikeChance.Location = new System.Drawing.Point(253, 255);
             this.chkboxCrticialStrikeChance.Name = "chkboxCrticialStrikeChance";
             this.chkboxCrticialStrikeChance.Size = new System.Drawing.Size(155, 20);
             this.chkboxCrticialStrikeChance.TabIndex = 19;
@@ -209,7 +204,7 @@
             // chkboxMana
             // 
             this.chkboxMana.AutoSize = true;
-            this.chkboxMana.Location = new System.Drawing.Point(6, 73);
+            this.chkboxMana.Location = new System.Drawing.Point(9, 73);
             this.chkboxMana.Name = "chkboxMana";
             this.chkboxMana.Size = new System.Drawing.Size(63, 20);
             this.chkboxMana.TabIndex = 18;
@@ -219,7 +214,7 @@
             // chkboxManaRegen
             // 
             this.chkboxManaRegen.AutoSize = true;
-            this.chkboxManaRegen.Location = new System.Drawing.Point(6, 99);
+            this.chkboxManaRegen.Location = new System.Drawing.Point(9, 99);
             this.chkboxManaRegen.Name = "chkboxManaRegen";
             this.chkboxManaRegen.Size = new System.Drawing.Size(107, 20);
             this.chkboxManaRegen.TabIndex = 17;
@@ -229,7 +224,7 @@
             // chkboxHealthRegen
             // 
             this.chkboxHealthRegen.AutoSize = true;
-            this.chkboxHealthRegen.Location = new System.Drawing.Point(6, 47);
+            this.chkboxHealthRegen.Location = new System.Drawing.Point(9, 47);
             this.chkboxHealthRegen.Name = "chkboxHealthRegen";
             this.chkboxHealthRegen.Size = new System.Drawing.Size(112, 20);
             this.chkboxHealthRegen.TabIndex = 16;
@@ -239,7 +234,7 @@
             // chkboxHealth
             // 
             this.chkboxHealth.AutoSize = true;
-            this.chkboxHealth.Location = new System.Drawing.Point(6, 21);
+            this.chkboxHealth.Location = new System.Drawing.Point(9, 21);
             this.chkboxHealth.Name = "chkboxHealth";
             this.chkboxHealth.Size = new System.Drawing.Size(68, 20);
             this.chkboxHealth.TabIndex = 15;
@@ -249,7 +244,7 @@
             // chkboxHealShieldPower
             // 
             this.chkboxHealShieldPower.AutoSize = true;
-            this.chkboxHealShieldPower.Location = new System.Drawing.Point(6, 255);
+            this.chkboxHealShieldPower.Location = new System.Drawing.Point(253, 229);
             this.chkboxHealShieldPower.Name = "chkboxHealShieldPower";
             this.chkboxHealShieldPower.Size = new System.Drawing.Size(141, 20);
             this.chkboxHealShieldPower.TabIndex = 14;
@@ -259,7 +254,7 @@
             // chkboxMovementSpeedPercent
             // 
             this.chkboxMovementSpeedPercent.AutoSize = true;
-            this.chkboxMovementSpeedPercent.Location = new System.Drawing.Point(6, 203);
+            this.chkboxMovementSpeedPercent.Location = new System.Drawing.Point(253, 73);
             this.chkboxMovementSpeedPercent.Name = "chkboxMovementSpeedPercent";
             this.chkboxMovementSpeedPercent.Size = new System.Drawing.Size(151, 20);
             this.chkboxMovementSpeedPercent.TabIndex = 13;
@@ -269,7 +264,7 @@
             // chkboxMovementSpeedFlat
             // 
             this.chkboxMovementSpeedFlat.AutoSize = true;
-            this.chkboxMovementSpeedFlat.Location = new System.Drawing.Point(6, 229);
+            this.chkboxMovementSpeedFlat.Location = new System.Drawing.Point(253, 47);
             this.chkboxMovementSpeedFlat.Name = "chkboxMovementSpeedFlat";
             this.chkboxMovementSpeedFlat.Size = new System.Drawing.Size(161, 20);
             this.chkboxMovementSpeedFlat.TabIndex = 12;
@@ -279,7 +274,7 @@
             // chkboxOmnivamp
             // 
             this.chkboxOmnivamp.AutoSize = true;
-            this.chkboxOmnivamp.Location = new System.Drawing.Point(256, 99);
+            this.chkboxOmnivamp.Location = new System.Drawing.Point(253, 21);
             this.chkboxOmnivamp.Name = "chkboxOmnivamp";
             this.chkboxOmnivamp.Size = new System.Drawing.Size(94, 20);
             this.chkboxOmnivamp.TabIndex = 11;
@@ -289,7 +284,7 @@
             // chkboxMagicPenetrationFlat
             // 
             this.chkboxMagicPenetrationFlat.AutoSize = true;
-            this.chkboxMagicPenetrationFlat.Location = new System.Drawing.Point(256, 73);
+            this.chkboxMagicPenetrationFlat.Location = new System.Drawing.Point(253, 203);
             this.chkboxMagicPenetrationFlat.Name = "chkboxMagicPenetrationFlat";
             this.chkboxMagicPenetrationFlat.Size = new System.Drawing.Size(162, 20);
             this.chkboxMagicPenetrationFlat.TabIndex = 10;
@@ -299,7 +294,7 @@
             // chkboxMagicPenetrationPercent
             // 
             this.chkboxMagicPenetrationPercent.AutoSize = true;
-            this.chkboxMagicPenetrationPercent.Location = new System.Drawing.Point(256, 47);
+            this.chkboxMagicPenetrationPercent.Location = new System.Drawing.Point(253, 177);
             this.chkboxMagicPenetrationPercent.Name = "chkboxMagicPenetrationPercent";
             this.chkboxMagicPenetrationPercent.Size = new System.Drawing.Size(152, 20);
             this.chkboxMagicPenetrationPercent.TabIndex = 9;
@@ -309,7 +304,7 @@
             // chkboxMagicResist
             // 
             this.chkboxMagicResist.AutoSize = true;
-            this.chkboxMagicResist.Location = new System.Drawing.Point(6, 151);
+            this.chkboxMagicResist.Location = new System.Drawing.Point(9, 151);
             this.chkboxMagicResist.Name = "chkboxMagicResist";
             this.chkboxMagicResist.Size = new System.Drawing.Size(107, 20);
             this.chkboxMagicResist.TabIndex = 8;
@@ -319,7 +314,7 @@
             // chkboxLethality
             // 
             this.chkboxLethality.AutoSize = true;
-            this.chkboxLethality.Location = new System.Drawing.Point(256, 177);
+            this.chkboxLethality.Location = new System.Drawing.Point(253, 151);
             this.chkboxLethality.Name = "chkboxLethality";
             this.chkboxLethality.Size = new System.Drawing.Size(78, 20);
             this.chkboxLethality.TabIndex = 7;
@@ -329,7 +324,7 @@
             // chkboxArmorPenetrationPercent
             // 
             this.chkboxArmorPenetrationPercent.AutoSize = true;
-            this.chkboxArmorPenetrationPercent.Location = new System.Drawing.Point(256, 151);
+            this.chkboxArmorPenetrationPercent.Location = new System.Drawing.Point(253, 125);
             this.chkboxArmorPenetrationPercent.Name = "chkboxArmorPenetrationPercent";
             this.chkboxArmorPenetrationPercent.Size = new System.Drawing.Size(151, 20);
             this.chkboxArmorPenetrationPercent.TabIndex = 6;
@@ -339,7 +334,7 @@
             // chkboxArmor
             // 
             this.chkboxArmor.AutoSize = true;
-            this.chkboxArmor.Location = new System.Drawing.Point(6, 125);
+            this.chkboxArmor.Location = new System.Drawing.Point(9, 125);
             this.chkboxArmor.Name = "chkboxArmor";
             this.chkboxArmor.Size = new System.Drawing.Size(65, 20);
             this.chkboxArmor.TabIndex = 5;
@@ -349,7 +344,7 @@
             // chkboxLifeSteal
             // 
             this.chkboxLifeSteal.AutoSize = true;
-            this.chkboxLifeSteal.Location = new System.Drawing.Point(256, 229);
+            this.chkboxLifeSteal.Location = new System.Drawing.Point(9, 281);
             this.chkboxLifeSteal.Name = "chkboxLifeSteal";
             this.chkboxLifeSteal.Size = new System.Drawing.Size(84, 20);
             this.chkboxLifeSteal.TabIndex = 4;
@@ -359,7 +354,7 @@
             // chkboxAttackSpeed
             // 
             this.chkboxAttackSpeed.AutoSize = true;
-            this.chkboxAttackSpeed.Location = new System.Drawing.Point(256, 203);
+            this.chkboxAttackSpeed.Location = new System.Drawing.Point(9, 203);
             this.chkboxAttackSpeed.Name = "chkboxAttackSpeed";
             this.chkboxAttackSpeed.Size = new System.Drawing.Size(110, 20);
             this.chkboxAttackSpeed.TabIndex = 3;
@@ -369,7 +364,7 @@
             // chkboxAbilityHaste
             // 
             this.chkboxAbilityHaste.AutoSize = true;
-            this.chkboxAbilityHaste.Location = new System.Drawing.Point(6, 177);
+            this.chkboxAbilityHaste.Location = new System.Drawing.Point(9, 255);
             this.chkboxAbilityHaste.Name = "chkboxAbilityHaste";
             this.chkboxAbilityHaste.Size = new System.Drawing.Size(104, 20);
             this.chkboxAbilityHaste.TabIndex = 2;
@@ -379,7 +374,7 @@
             // chkboxAbilityPower
             // 
             this.chkboxAbilityPower.AutoSize = true;
-            this.chkboxAbilityPower.Location = new System.Drawing.Point(256, 21);
+            this.chkboxAbilityPower.Location = new System.Drawing.Point(9, 229);
             this.chkboxAbilityPower.Name = "chkboxAbilityPower";
             this.chkboxAbilityPower.Size = new System.Drawing.Size(106, 20);
             this.chkboxAbilityPower.TabIndex = 1;
@@ -389,53 +384,18 @@
             // chkboxAttackDamage
             // 
             this.chkboxAttackDamage.AutoSize = true;
-            this.chkboxAttackDamage.Location = new System.Drawing.Point(256, 125);
+            this.chkboxAttackDamage.Location = new System.Drawing.Point(9, 177);
             this.chkboxAttackDamage.Name = "chkboxAttackDamage";
             this.chkboxAttackDamage.Size = new System.Drawing.Size(122, 20);
             this.chkboxAttackDamage.TabIndex = 0;
             this.chkboxAttackDamage.Text = "Attack Damage";
             this.chkboxAttackDamage.UseVisualStyleBackColor = true;
             // 
-            // gboxSpecificChampion
-            // 
-            this.gboxSpecificChampion.Controls.Add(this.rbtnDisable);
-            this.gboxSpecificChampion.Controls.Add(this.rbtnEnable);
-            this.gboxSpecificChampion.Location = new System.Drawing.Point(684, 470);
-            this.gboxSpecificChampion.Name = "gboxSpecificChampion";
-            this.gboxSpecificChampion.Size = new System.Drawing.Size(200, 100);
-            this.gboxSpecificChampion.TabIndex = 3;
-            this.gboxSpecificChampion.TabStop = false;
-            this.gboxSpecificChampion.Text = "Specific Champion";
-            // 
-            // rbtnDisable
-            // 
-            this.rbtnDisable.AutoSize = true;
-            this.rbtnDisable.Location = new System.Drawing.Point(15, 58);
-            this.rbtnDisable.Name = "rbtnDisable";
-            this.rbtnDisable.Size = new System.Drawing.Size(75, 20);
-            this.rbtnDisable.TabIndex = 1;
-            this.rbtnDisable.TabStop = true;
-            this.rbtnDisable.Text = "Disable";
-            this.rbtnDisable.UseVisualStyleBackColor = true;
-            this.rbtnDisable.CheckedChanged += new System.EventHandler(this.rbtnDisable_CheckedChanged);
-            // 
-            // rbtnEnable
-            // 
-            this.rbtnEnable.AutoSize = true;
-            this.rbtnEnable.Location = new System.Drawing.Point(15, 32);
-            this.rbtnEnable.Name = "rbtnEnable";
-            this.rbtnEnable.Size = new System.Drawing.Size(71, 20);
-            this.rbtnEnable.TabIndex = 0;
-            this.rbtnEnable.TabStop = true;
-            this.rbtnEnable.Text = "Enable";
-            this.rbtnEnable.UseVisualStyleBackColor = true;
-            this.rbtnEnable.CheckedChanged += new System.EventHandler(this.rbtnEnable_CheckedChanged);
-            // 
             // btnMinimize
             // 
-            this.btnMinimize.Location = new System.Drawing.Point(971, 536);
+            this.btnMinimize.Location = new System.Drawing.Point(926, 550);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(75, 23);
+            this.btnMinimize.Size = new System.Drawing.Size(123, 24);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.Text = "Minimize";
             this.btnMinimize.UseVisualStyleBackColor = true;
@@ -443,9 +403,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1052, 536);
+            this.btnClose.Location = new System.Drawing.Point(1049, 550);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(123, 24);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -453,812 +413,647 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(890, 536);
+            this.btnReset.Location = new System.Drawing.Point(803, 550);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(123, 24);
             this.btnReset.TabIndex = 6;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // gboxChampion
+            // lsboxItems
             // 
-            this.gboxChampion.Controls.Add(this.btnRuneTuner);
-            this.gboxChampion.Controls.Add(this.btnRunes);
-            this.gboxChampion.Controls.Add(this.label17);
-            this.gboxChampion.Controls.Add(this.lblCriticalStrikeDamage);
-            this.gboxChampion.Controls.Add(this.label47);
-            this.gboxChampion.Controls.Add(this.lblCriticalStrikeChance);
-            this.gboxChampion.Controls.Add(this.lblHealShieldPower);
-            this.gboxChampion.Controls.Add(this.lblMagicPenetrationFlat);
-            this.gboxChampion.Controls.Add(this.lblHealthRegen);
-            this.gboxChampion.Controls.Add(this.lblHealth);
-            this.gboxChampion.Controls.Add(this.btnAddItem);
-            this.gboxChampion.Controls.Add(this.lblMagicPenetrationPercent);
-            this.gboxChampion.Controls.Add(this.lblLethality);
-            this.gboxChampion.Controls.Add(this.lblArmorPenetrationPercent);
-            this.gboxChampion.Controls.Add(this.lblMovementSpeed);
-            this.gboxChampion.Controls.Add(this.lblOmnivamp);
-            this.gboxChampion.Controls.Add(this.lblLifeSteal);
-            this.gboxChampion.Controls.Add(this.lblAbilityHaste);
-            this.gboxChampion.Controls.Add(this.lblAbilityPower);
-            this.gboxChampion.Controls.Add(this.lblAttackSpeed);
-            this.gboxChampion.Controls.Add(this.lblAttackDamage);
-            this.gboxChampion.Controls.Add(this.lblManaRegen);
-            this.gboxChampion.Controls.Add(this.lblMana);
-            this.gboxChampion.Controls.Add(this.lblMagicResist);
-            this.gboxChampion.Controls.Add(this.lblArmor);
-            this.gboxChampion.Controls.Add(this.label26);
-            this.gboxChampion.Controls.Add(this.label25);
-            this.gboxChampion.Controls.Add(this.label24);
-            this.gboxChampion.Controls.Add(this.label23);
-            this.gboxChampion.Controls.Add(this.label22);
-            this.gboxChampion.Controls.Add(this.label20);
-            this.gboxChampion.Controls.Add(this.label21);
-            this.gboxChampion.Controls.Add(this.label99);
-            this.gboxChampion.Controls.Add(this.label335);
-            this.gboxChampion.Controls.Add(this.label15);
-            this.gboxChampion.Controls.Add(this.label16);
-            this.gboxChampion.Controls.Add(this.label12);
-            this.gboxChampion.Controls.Add(this.label13);
-            this.gboxChampion.Controls.Add(this.label9);
-            this.gboxChampion.Controls.Add(this.label10);
-            this.gboxChampion.Controls.Add(this.label19);
-            this.gboxChampion.Controls.Add(this.label14);
-            this.gboxChampion.Controls.Add(this.label11);
-            this.gboxChampion.Controls.Add(this.label8);
-            this.gboxChampion.Controls.Add(this.gboxAbilityCalculations);
-            this.gboxChampion.Controls.Add(this.label7);
-            this.gboxChampion.Controls.Add(this.label6);
-            this.gboxChampion.Controls.Add(this.label5);
-            this.gboxChampion.Controls.Add(this.label4);
-            this.gboxChampion.Controls.Add(this.nudRLevel);
-            this.gboxChampion.Controls.Add(this.nudWLevel);
-            this.gboxChampion.Controls.Add(this.nudELevel);
-            this.gboxChampion.Controls.Add(this.nudQLevel);
-            this.gboxChampion.Controls.Add(this.nudChampionLevel);
-            this.gboxChampion.Controls.Add(this.label3);
-            this.gboxChampion.Controls.Add(this.btnRemoveAll);
-            this.gboxChampion.Controls.Add(this.lsboxChampItems);
-            this.gboxChampion.Controls.Add(this.btnRemoveItem);
-            this.gboxChampion.Controls.Add(this.label2);
-            this.gboxChampion.Controls.Add(this.cboxChampion);
-            this.gboxChampion.Location = new System.Drawing.Point(538, 48);
-            this.gboxChampion.Name = "gboxChampion";
-            this.gboxChampion.Size = new System.Drawing.Size(798, 416);
-            this.gboxChampion.TabIndex = 7;
-            this.gboxChampion.TabStop = false;
-            this.gboxChampion.Text = "Champion";
+            this.lsboxItems.FormattingEnabled = true;
+            this.lsboxItems.ItemHeight = 16;
+            this.lsboxItems.Location = new System.Drawing.Point(572, 53);
+            this.lsboxItems.Name = "lsboxItems";
+            this.lsboxItems.Size = new System.Drawing.Size(776, 308);
+            this.lsboxItems.TabIndex = 9;
             // 
-            // btnRuneTuner
+            // label2
             // 
-            this.btnRuneTuner.Location = new System.Drawing.Point(661, 202);
-            this.btnRuneTuner.Name = "btnRuneTuner";
-            this.btnRuneTuner.Size = new System.Drawing.Size(93, 23);
-            this.btnRuneTuner.TabIndex = 82;
-            this.btnRuneTuner.Text = "Rune Tuner";
-            this.btnRuneTuner.UseVisualStyleBackColor = true;
-            this.btnRuneTuner.Click += new System.EventHandler(this.btnRuneTuner_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(569, 382);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 16);
+            this.label2.TabIndex = 86;
+            this.label2.Text = "Gold Cost:";
             // 
-            // btnRunes
+            // tBoxGoldCost
             // 
-            this.btnRunes.Location = new System.Drawing.Point(670, 173);
-            this.btnRunes.Name = "btnRunes";
-            this.btnRunes.Size = new System.Drawing.Size(75, 23);
-            this.btnRunes.TabIndex = 81;
-            this.btnRunes.Text = "Runes";
-            this.btnRunes.UseVisualStyleBackColor = true;
-            this.btnRunes.Click += new System.EventHandler(this.btnRunes_Click);
+            this.tBoxGoldCost.Location = new System.Drawing.Point(674, 380);
+            this.tBoxGoldCost.Name = "tBoxGoldCost";
+            this.tBoxGoldCost.ReadOnly = true;
+            this.tBoxGoldCost.Size = new System.Drawing.Size(100, 22);
+            this.tBoxGoldCost.TabIndex = 85;
             // 
-            // label17
+            // grpBoxMapSelector
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(326, 56);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(211, 16);
-            this.label17.TabIndex = 80;
-            this.label17.Text = "Hover To See Base Stats + Bonus";
+            this.grpBoxMapSelector.Controls.Add(this.radioButton3);
+            this.grpBoxMapSelector.Controls.Add(this.radioButton2);
+            this.grpBoxMapSelector.Controls.Add(this.radioButton1);
+            this.grpBoxMapSelector.Location = new System.Drawing.Point(569, 477);
+            this.grpBoxMapSelector.Name = "grpBoxMapSelector";
+            this.grpBoxMapSelector.Size = new System.Drawing.Size(205, 100);
+            this.grpBoxMapSelector.TabIndex = 87;
+            this.grpBoxMapSelector.TabStop = false;
+            this.grpBoxMapSelector.Text = "Map Selector";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 21);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(122, 20);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Summoners Rift";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 47);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(67, 20);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "ARAM";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(6, 73);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(78, 20);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "All Items";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // grpBoxItemControls
+            // 
+            this.grpBoxItemControls.Controls.Add(this.button1);
+            this.grpBoxItemControls.Controls.Add(this.btnRemoveAll);
+            this.grpBoxItemControls.Controls.Add(this.btnRemoveAt);
+            this.grpBoxItemControls.Controls.Add(this.btnAddItem);
+            this.grpBoxItemControls.Location = new System.Drawing.Point(846, 367);
+            this.grpBoxItemControls.Name = "grpBoxItemControls";
+            this.grpBoxItemControls.Size = new System.Drawing.Size(303, 117);
+            this.grpBoxItemControls.TabIndex = 91;
+            this.grpBoxItemControls.TabStop = false;
+            this.grpBoxItemControls.Text = "Item Controls";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(569, 415);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 16);
+            this.label3.TabIndex = 93;
+            this.label3.Text = "Gold Efficiency:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(674, 412);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 92;
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.Location = new System.Drawing.Point(6, 39);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(123, 24);
+            this.btnAddItem.TabIndex = 91;
+            this.btnAddItem.Text = "Add Item";
+            this.btnAddItem.UseVisualStyleBackColor = true;
+            // 
+            // btnRemoveAt
+            // 
+            this.btnRemoveAt.Location = new System.Drawing.Point(167, 39);
+            this.btnRemoveAt.Name = "btnRemoveAt";
+            this.btnRemoveAt.Size = new System.Drawing.Size(123, 24);
+            this.btnRemoveAt.TabIndex = 92;
+            this.btnRemoveAt.Text = "Remove Item";
+            this.btnRemoveAt.UseVisualStyleBackColor = true;
+            // 
+            // btnRemoveAll
+            // 
+            this.btnRemoveAll.Location = new System.Drawing.Point(167, 87);
+            this.btnRemoveAll.Name = "btnRemoveAll";
+            this.btnRemoveAll.Size = new System.Drawing.Size(123, 24);
+            this.btnRemoveAll.TabIndex = 93;
+            this.btnRemoveAll.Text = "Remove All";
+            this.btnRemoveAll.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 24);
+            this.button1.TabIndex = 94;
+            this.button1.Text = "View Items";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(1196, 25);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(152, 22);
+            this.textBox2.TabIndex = 94;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(1109, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 16);
+            this.label5.TabIndex = 95;
+            this.label5.Text = "Item Search:";
+            // 
+            // grpBoxItemStatsProvided
+            // 
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblTenacity);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label9);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label4);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label25);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblMovementSpeedPercent);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label26);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label27);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label24);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblCriticalStrikeDamage);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblArmor);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label47);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label23);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblCriticalStrikeChance);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblMagicResist);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblHealShieldPower);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label22);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblMagicPenetrationFlat);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblMana);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblHealthRegen);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label20);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label11);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblManaRegen);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblHealth);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label21);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label8);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblAttackDamage);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label14);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label99);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblMagicPenetrationPercent);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblAttackSpeed);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label19);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label335);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblLethality);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblAbilityPower);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label10);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label15);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblArmorPenetrationPercent);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblAbilityHaste);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label16);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblMovementSpeed);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblLifeSteal);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label13);
+            this.grpBoxItemStatsProvided.Controls.Add(this.label12);
+            this.grpBoxItemStatsProvided.Controls.Add(this.lblOmnivamp);
+            this.grpBoxItemStatsProvided.Location = new System.Drawing.Point(37, 370);
+            this.grpBoxItemStatsProvided.Name = "grpBoxItemStatsProvided";
+            this.grpBoxItemStatsProvided.Size = new System.Drawing.Size(488, 207);
+            this.grpBoxItemStatsProvided.TabIndex = 96;
+            this.grpBoxItemStatsProvided.TabStop = false;
+            this.grpBoxItemStatsProvided.Text = "Item Stats Provided";
+            // 
+            // lblTenacity
+            // 
+            this.lblTenacity.AutoSize = true;
+            this.lblTenacity.Location = new System.Drawing.Point(440, 62);
+            this.lblTenacity.Name = "lblTenacity";
+            this.lblTenacity.Size = new System.Drawing.Size(26, 16);
+            this.lblTenacity.TabIndex = 140;
+            this.lblTenacity.Text = "0%";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(253, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 16);
+            this.label4.TabIndex = 139;
+            this.label4.Text = "Tenacity:";
+            // 
+            // lblMovementSpeedPercent
+            // 
+            this.lblMovementSpeedPercent.AutoSize = true;
+            this.lblMovementSpeedPercent.Location = new System.Drawing.Point(440, 46);
+            this.lblMovementSpeedPercent.Name = "lblMovementSpeedPercent";
+            this.lblMovementSpeedPercent.Size = new System.Drawing.Size(26, 16);
+            this.lblMovementSpeedPercent.TabIndex = 138;
+            this.lblMovementSpeedPercent.Text = "0%";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(253, 50);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(132, 16);
+            this.label27.TabIndex = 137;
+            this.label27.Text = "Movement Speed %:";
             // 
             // lblCriticalStrikeDamage
             // 
             this.lblCriticalStrikeDamage.AutoSize = true;
-            this.lblCriticalStrikeDamage.Location = new System.Drawing.Point(543, 246);
+            this.lblCriticalStrikeDamage.Location = new System.Drawing.Point(440, 174);
             this.lblCriticalStrikeDamage.Name = "lblCriticalStrikeDamage";
             this.lblCriticalStrikeDamage.Size = new System.Drawing.Size(26, 16);
-            this.lblCriticalStrikeDamage.TabIndex = 79;
+            this.lblCriticalStrikeDamage.TabIndex = 136;
             this.lblCriticalStrikeDamage.Text = "0%";
-            this.lblCriticalStrikeDamage.MouseHover += new System.EventHandler(this.lblCriticalStrikeDamage_MouseHover);
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(394, 246);
+            this.label47.Location = new System.Drawing.Point(250, 178);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(143, 16);
-            this.label47.TabIndex = 78;
+            this.label47.TabIndex = 135;
             this.label47.Text = "Critical Strike Damage:";
             // 
             // lblCriticalStrikeChance
             // 
             this.lblCriticalStrikeChance.AutoSize = true;
-            this.lblCriticalStrikeChance.Location = new System.Drawing.Point(543, 230);
+            this.lblCriticalStrikeChance.Location = new System.Drawing.Point(440, 158);
             this.lblCriticalStrikeChance.Name = "lblCriticalStrikeChance";
             this.lblCriticalStrikeChance.Size = new System.Drawing.Size(26, 16);
-            this.lblCriticalStrikeChance.TabIndex = 77;
+            this.lblCriticalStrikeChance.TabIndex = 134;
             this.lblCriticalStrikeChance.Text = "0%";
-            this.lblCriticalStrikeChance.MouseHover += new System.EventHandler(this.lblCriticalStrikeChance_MouseHover);
             // 
             // lblHealShieldPower
             // 
             this.lblHealShieldPower.AutoSize = true;
-            this.lblHealShieldPower.Location = new System.Drawing.Point(543, 217);
+            this.lblHealShieldPower.Location = new System.Drawing.Point(440, 142);
             this.lblHealShieldPower.Name = "lblHealShieldPower";
             this.lblHealShieldPower.Size = new System.Drawing.Size(26, 16);
-            this.lblHealShieldPower.TabIndex = 76;
+            this.lblHealShieldPower.TabIndex = 133;
             this.lblHealShieldPower.Text = "0%";
-            this.lblHealShieldPower.MouseHover += new System.EventHandler(this.lblHealShieldPower_MouseHover);
             // 
             // lblMagicPenetrationFlat
             // 
             this.lblMagicPenetrationFlat.AutoSize = true;
-            this.lblMagicPenetrationFlat.Location = new System.Drawing.Point(543, 201);
+            this.lblMagicPenetrationFlat.Location = new System.Drawing.Point(440, 125);
             this.lblMagicPenetrationFlat.Name = "lblMagicPenetrationFlat";
             this.lblMagicPenetrationFlat.Size = new System.Drawing.Size(14, 16);
-            this.lblMagicPenetrationFlat.TabIndex = 75;
+            this.lblMagicPenetrationFlat.TabIndex = 132;
             this.lblMagicPenetrationFlat.Text = "0";
-            this.lblMagicPenetrationFlat.MouseHover += new System.EventHandler(this.lblMagicPenetrationFlat_MouseHover);
             // 
             // lblHealthRegen
             // 
             this.lblHealthRegen.AutoSize = true;
-            this.lblHealthRegen.Location = new System.Drawing.Point(352, 121);
+            this.lblHealthRegen.Location = new System.Drawing.Point(142, 34);
             this.lblHealthRegen.Name = "lblHealthRegen";
-            this.lblHealthRegen.Size = new System.Drawing.Size(14, 16);
-            this.lblHealthRegen.TabIndex = 74;
-            this.lblHealthRegen.Text = "0";
-            this.lblHealthRegen.MouseHover += new System.EventHandler(this.lblHealthRegen_MouseHover);
+            this.lblHealthRegen.Size = new System.Drawing.Size(26, 16);
+            this.lblHealthRegen.TabIndex = 131;
+            this.lblHealthRegen.Text = "0%";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 114);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(103, 16);
+            this.label11.TabIndex = 98;
+            this.label11.Text = "Attack Damage:";
             // 
             // lblHealth
             // 
             this.lblHealth.AutoSize = true;
-            this.lblHealth.Location = new System.Drawing.Point(352, 104);
+            this.lblHealth.Location = new System.Drawing.Point(142, 18);
             this.lblHealth.Name = "lblHealth";
             this.lblHealth.Size = new System.Drawing.Size(14, 16);
-            this.lblHealth.TabIndex = 73;
+            this.lblHealth.TabIndex = 130;
             this.lblHealth.Text = "0";
-            this.lblHealth.MouseHover += new System.EventHandler(this.lblHealth_MouseHover);
             // 
-            // btnAddItem
+            // label8
             // 
-            this.btnAddItem.Location = new System.Drawing.Point(91, 353);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(75, 23);
-            this.btnAddItem.TabIndex = 8;
-            this.btnAddItem.Text = "Add Item";
-            this.btnAddItem.UseVisualStyleBackColor = true;
-            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 130);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 16);
+            this.label8.TabIndex = 97;
+            this.label8.Text = "Attack Speed:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 162);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 16);
+            this.label14.TabIndex = 99;
+            this.label14.Text = "Ability Haste:";
             // 
             // lblMagicPenetrationPercent
             // 
             this.lblMagicPenetrationPercent.AutoSize = true;
-            this.lblMagicPenetrationPercent.Location = new System.Drawing.Point(543, 186);
+            this.lblMagicPenetrationPercent.Location = new System.Drawing.Point(440, 110);
             this.lblMagicPenetrationPercent.Name = "lblMagicPenetrationPercent";
             this.lblMagicPenetrationPercent.Size = new System.Drawing.Size(26, 16);
-            this.lblMagicPenetrationPercent.TabIndex = 70;
+            this.lblMagicPenetrationPercent.TabIndex = 129;
             this.lblMagicPenetrationPercent.Text = "0%";
-            this.lblMagicPenetrationPercent.MouseHover += new System.EventHandler(this.lblMagicPenetrationPercent_MouseHover);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 146);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(87, 16);
+            this.label19.TabIndex = 100;
+            this.label19.Text = "Ability Power:";
             // 
             // lblLethality
             // 
             this.lblLethality.AutoSize = true;
-            this.lblLethality.Location = new System.Drawing.Point(543, 170);
+            this.lblLethality.Location = new System.Drawing.Point(440, 93);
             this.lblLethality.Name = "lblLethality";
             this.lblLethality.Size = new System.Drawing.Size(14, 16);
-            this.lblLethality.TabIndex = 69;
+            this.lblLethality.TabIndex = 128;
             this.lblLethality.Text = "0";
-            this.lblLethality.MouseHover += new System.EventHandler(this.lblLethality_MouseHover);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 34);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(93, 16);
+            this.label10.TabIndex = 101;
+            this.label10.Text = "Health Regen:";
             // 
             // lblArmorPenetrationPercent
             // 
             this.lblArmorPenetrationPercent.AutoSize = true;
-            this.lblArmorPenetrationPercent.Location = new System.Drawing.Point(543, 156);
+            this.lblArmorPenetrationPercent.Location = new System.Drawing.Point(440, 78);
             this.lblArmorPenetrationPercent.Name = "lblArmorPenetrationPercent";
             this.lblArmorPenetrationPercent.Size = new System.Drawing.Size(26, 16);
-            this.lblArmorPenetrationPercent.TabIndex = 68;
+            this.lblArmorPenetrationPercent.TabIndex = 127;
             this.lblArmorPenetrationPercent.Text = "0%";
-            this.lblArmorPenetrationPercent.MouseHover += new System.EventHandler(this.lblArmorPenetrationPercent_MouseHover);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 16);
+            this.label9.TabIndex = 102;
+            this.label9.Text = "Health:";
             // 
             // lblMovementSpeed
             // 
             this.lblMovementSpeed.AutoSize = true;
-            this.lblMovementSpeed.Location = new System.Drawing.Point(543, 140);
+            this.lblMovementSpeed.Location = new System.Drawing.Point(440, 29);
             this.lblMovementSpeed.Name = "lblMovementSpeed";
             this.lblMovementSpeed.Size = new System.Drawing.Size(14, 16);
-            this.lblMovementSpeed.TabIndex = 67;
+            this.lblMovementSpeed.TabIndex = 126;
             this.lblMovementSpeed.Text = "0";
-            this.lblMovementSpeed.MouseHover += new System.EventHandler(this.lblMovementSpeed_MouseHover);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 66);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(88, 16);
+            this.label13.TabIndex = 103;
+            this.label13.Text = "Mana Regen:";
             // 
             // lblOmnivamp
             // 
             this.lblOmnivamp.AutoSize = true;
-            this.lblOmnivamp.Location = new System.Drawing.Point(543, 123);
+            this.lblOmnivamp.Location = new System.Drawing.Point(440, 13);
             this.lblOmnivamp.Name = "lblOmnivamp";
-            this.lblOmnivamp.Size = new System.Drawing.Size(14, 16);
-            this.lblOmnivamp.TabIndex = 66;
-            this.lblOmnivamp.Text = "0";
-            this.lblOmnivamp.MouseHover += new System.EventHandler(this.lblOmnivamp_MouseHover);
+            this.lblOmnivamp.Size = new System.Drawing.Size(26, 16);
+            this.lblOmnivamp.TabIndex = 125;
+            this.lblOmnivamp.Text = "0%";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 16);
+            this.label12.TabIndex = 104;
+            this.label12.Text = "Mana:";
             // 
             // lblLifeSteal
             // 
             this.lblLifeSteal.AutoSize = true;
-            this.lblLifeSteal.Location = new System.Drawing.Point(543, 107);
+            this.lblLifeSteal.Location = new System.Drawing.Point(142, 178);
             this.lblLifeSteal.Name = "lblLifeSteal";
-            this.lblLifeSteal.Size = new System.Drawing.Size(14, 16);
-            this.lblLifeSteal.TabIndex = 65;
-            this.lblLifeSteal.Text = "0";
-            this.lblLifeSteal.MouseHover += new System.EventHandler(this.lblLifeSteal_MouseHover);
+            this.lblLifeSteal.Size = new System.Drawing.Size(26, 16);
+            this.lblLifeSteal.TabIndex = 124;
+            this.lblLifeSteal.Text = "0%";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 98);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(88, 16);
+            this.label16.TabIndex = 105;
+            this.label16.Text = "Magic Resist:";
             // 
             // lblAbilityHaste
             // 
             this.lblAbilityHaste.AutoSize = true;
-            this.lblAbilityHaste.Location = new System.Drawing.Point(352, 256);
+            this.lblAbilityHaste.Location = new System.Drawing.Point(142, 162);
             this.lblAbilityHaste.Name = "lblAbilityHaste";
             this.lblAbilityHaste.Size = new System.Drawing.Size(14, 16);
-            this.lblAbilityHaste.TabIndex = 64;
+            this.lblAbilityHaste.TabIndex = 123;
             this.lblAbilityHaste.Text = "0";
-            this.lblAbilityHaste.MouseHover += new System.EventHandler(this.lblAbilityHaste_MouseHover);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 82);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(46, 16);
+            this.label15.TabIndex = 106;
+            this.label15.Text = "Armor:";
             // 
             // lblAbilityPower
             // 
             this.lblAbilityPower.AutoSize = true;
-            this.lblAbilityPower.Location = new System.Drawing.Point(352, 239);
+            this.lblAbilityPower.Location = new System.Drawing.Point(142, 146);
             this.lblAbilityPower.Name = "lblAbilityPower";
             this.lblAbilityPower.Size = new System.Drawing.Size(14, 16);
-            this.lblAbilityPower.TabIndex = 63;
+            this.lblAbilityPower.TabIndex = 122;
             this.lblAbilityPower.Text = "0";
-            this.lblAbilityPower.MouseHover += new System.EventHandler(this.lblAbilityPower_MouseHover);
+            // 
+            // label335
+            // 
+            this.label335.AutoSize = true;
+            this.label335.Location = new System.Drawing.Point(253, 18);
+            this.label335.Name = "label335";
+            this.label335.Size = new System.Drawing.Size(75, 16);
+            this.label335.TabIndex = 107;
+            this.label335.Text = "Omnivamp:";
             // 
             // lblAttackSpeed
             // 
             this.lblAttackSpeed.AutoSize = true;
-            this.lblAttackSpeed.Location = new System.Drawing.Point(352, 223);
+            this.lblAttackSpeed.Location = new System.Drawing.Point(142, 130);
             this.lblAttackSpeed.Name = "lblAttackSpeed";
-            this.lblAttackSpeed.Size = new System.Drawing.Size(14, 16);
-            this.lblAttackSpeed.TabIndex = 62;
-            this.lblAttackSpeed.Text = "0";
-            this.lblAttackSpeed.MouseHover += new System.EventHandler(this.lblAttackSpeed_MouseHover);
+            this.lblAttackSpeed.Size = new System.Drawing.Size(26, 16);
+            this.lblAttackSpeed.TabIndex = 121;
+            this.lblAttackSpeed.Text = "0%";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(6, 178);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(65, 16);
+            this.label99.TabIndex = 108;
+            this.label99.Text = "Life Steal:";
             // 
             // lblAttackDamage
             // 
             this.lblAttackDamage.AutoSize = true;
-            this.lblAttackDamage.Location = new System.Drawing.Point(352, 206);
+            this.lblAttackDamage.Location = new System.Drawing.Point(142, 114);
             this.lblAttackDamage.Name = "lblAttackDamage";
             this.lblAttackDamage.Size = new System.Drawing.Size(14, 16);
-            this.lblAttackDamage.TabIndex = 61;
+            this.lblAttackDamage.TabIndex = 120;
             this.lblAttackDamage.Text = "0";
-            this.lblAttackDamage.MouseHover += new System.EventHandler(this.lblAttackDamage_MouseHover);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(253, 82);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(132, 16);
+            this.label21.TabIndex = 109;
+            this.label21.Text = "Armor Penetration %:";
             // 
             // lblManaRegen
             // 
             this.lblManaRegen.AutoSize = true;
-            this.lblManaRegen.Location = new System.Drawing.Point(352, 154);
+            this.lblManaRegen.Location = new System.Drawing.Point(142, 66);
             this.lblManaRegen.Name = "lblManaRegen";
-            this.lblManaRegen.Size = new System.Drawing.Size(14, 16);
-            this.lblManaRegen.TabIndex = 60;
-            this.lblManaRegen.Text = "0";
-            this.lblManaRegen.MouseHover += new System.EventHandler(this.lblManaRegen_MouseHover);
+            this.lblManaRegen.Size = new System.Drawing.Size(26, 16);
+            this.lblManaRegen.TabIndex = 119;
+            this.lblManaRegen.Text = "0%";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(253, 34);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(117, 16);
+            this.label20.TabIndex = 110;
+            this.label20.Text = "Movement Speed:";
             // 
             // lblMana
             // 
             this.lblMana.AutoSize = true;
-            this.lblMana.Location = new System.Drawing.Point(352, 138);
+            this.lblMana.Location = new System.Drawing.Point(142, 50);
             this.lblMana.Name = "lblMana";
             this.lblMana.Size = new System.Drawing.Size(14, 16);
-            this.lblMana.TabIndex = 59;
+            this.lblMana.TabIndex = 118;
             this.lblMana.Text = "0";
-            this.lblMana.MouseHover += new System.EventHandler(this.lblMana_MouseHover);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(253, 114);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(133, 16);
+            this.label22.TabIndex = 111;
+            this.label22.Text = "Magic Penetration %:";
             // 
             // lblMagicResist
             // 
             this.lblMagicResist.AutoSize = true;
-            this.lblMagicResist.Location = new System.Drawing.Point(352, 189);
+            this.lblMagicResist.Location = new System.Drawing.Point(142, 98);
             this.lblMagicResist.Name = "lblMagicResist";
             this.lblMagicResist.Size = new System.Drawing.Size(14, 16);
-            this.lblMagicResist.TabIndex = 58;
+            this.lblMagicResist.TabIndex = 117;
             this.lblMagicResist.Text = "0";
-            this.lblMagicResist.MouseHover += new System.EventHandler(this.lblMagicResist_MouseHover);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(253, 98);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(59, 16);
+            this.label23.TabIndex = 112;
+            this.label23.Text = "Lethality:";
             // 
             // lblArmor
             // 
             this.lblArmor.AutoSize = true;
-            this.lblArmor.Location = new System.Drawing.Point(352, 173);
+            this.lblArmor.Location = new System.Drawing.Point(142, 82);
             this.lblArmor.Name = "lblArmor";
             this.lblArmor.Size = new System.Drawing.Size(14, 16);
-            this.lblArmor.TabIndex = 57;
+            this.lblArmor.TabIndex = 116;
             this.lblArmor.Text = "0";
-            this.lblArmor.MouseHover += new System.EventHandler(this.lblArmor_MouseHover);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(253, 130);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(143, 16);
+            this.label24.TabIndex = 113;
+            this.label24.Text = "Magic Penetration Flat:";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(401, 230);
+            this.label26.Location = new System.Drawing.Point(250, 162);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(136, 16);
-            this.label26.TabIndex = 56;
+            this.label26.TabIndex = 115;
             this.label26.Text = "Critical Strike Chance:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(415, 217);
+            this.label25.Location = new System.Drawing.Point(253, 146);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(122, 16);
-            this.label25.TabIndex = 55;
+            this.label25.TabIndex = 114;
             this.label25.Text = "Heal/Shield Power:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(394, 201);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(143, 16);
-            this.label24.TabIndex = 54;
-            this.label24.Text = "Magic Penetration Flat:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(478, 169);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(59, 16);
-            this.label23.TabIndex = 53;
-            this.label23.Text = "Lethality:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(404, 185);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(133, 16);
-            this.label22.TabIndex = 52;
-            this.label22.Text = "Magic Penetration %:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(420, 137);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(117, 16);
-            this.label20.TabIndex = 51;
-            this.label20.Text = "Movement Speed:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(405, 153);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(132, 16);
-            this.label21.TabIndex = 50;
-            this.label21.Text = "Armor Penetration %:";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(472, 105);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(65, 16);
-            this.label99.TabIndex = 49;
-            this.label99.Text = "Life Steal:";
-            // 
-            // label335
-            // 
-            this.label335.AutoSize = true;
-            this.label335.Location = new System.Drawing.Point(462, 121);
-            this.label335.Name = "label335";
-            this.label335.Size = new System.Drawing.Size(75, 16);
-            this.label335.TabIndex = 48;
-            this.label335.Text = "Omnivamp:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(300, 169);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 16);
-            this.label15.TabIndex = 47;
-            this.label15.Text = "Armor:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(258, 185);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 16);
-            this.label16.TabIndex = 46;
-            this.label16.Text = "Magic Resist:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(302, 136);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 16);
-            this.label12.TabIndex = 45;
-            this.label12.Text = "Mana:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(258, 153);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 16);
-            this.label13.TabIndex = 44;
-            this.label13.Text = "Mana Regen:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(297, 104);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 16);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "Health:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(253, 120);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 16);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Health Regen:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(259, 239);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(87, 16);
-            this.label19.TabIndex = 41;
-            this.label19.Text = "Ability Power:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(259, 255);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 16);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "Ability Haste:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(243, 205);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 16);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "Attack Damage:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(255, 222);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 16);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Attack Speed:";
-            // 
-            // gboxAbilityCalculations
-            // 
-            this.gboxAbilityCalculations.Controls.Add(this.rbtnStats);
-            this.gboxAbilityCalculations.Controls.Add(this.rbtnScaling);
-            this.gboxAbilityCalculations.Controls.Add(this.btnR);
-            this.gboxAbilityCalculations.Controls.Add(this.btnPassive);
-            this.gboxAbilityCalculations.Controls.Add(this.btnW);
-            this.gboxAbilityCalculations.Controls.Add(this.btnQ);
-            this.gboxAbilityCalculations.Controls.Add(this.btnE);
-            this.gboxAbilityCalculations.Location = new System.Drawing.Point(375, 303);
-            this.gboxAbilityCalculations.Name = "gboxAbilityCalculations";
-            this.gboxAbilityCalculations.Size = new System.Drawing.Size(415, 107);
-            this.gboxAbilityCalculations.TabIndex = 8;
-            this.gboxAbilityCalculations.TabStop = false;
-            this.gboxAbilityCalculations.Text = "Abilities/Items Calculations";
-            // 
-            // rbtnStats
-            // 
-            this.rbtnStats.AutoSize = true;
-            this.rbtnStats.Location = new System.Drawing.Point(236, 29);
-            this.rbtnStats.Name = "rbtnStats";
-            this.rbtnStats.Size = new System.Drawing.Size(173, 20);
-            this.rbtnStats.TabIndex = 29;
-            this.rbtnStats.TabStop = true;
-            this.rbtnStats.Text = "Abilities/Items With Stats";
-            this.rbtnStats.UseVisualStyleBackColor = true;
-            this.rbtnStats.CheckedChanged += new System.EventHandler(this.rbtnStats_CheckedChanged);
-            // 
-            // rbtnScaling
-            // 
-            this.rbtnScaling.AutoSize = true;
-            this.rbtnScaling.Location = new System.Drawing.Point(6, 29);
-            this.rbtnScaling.Name = "rbtnScaling";
-            this.rbtnScaling.Size = new System.Drawing.Size(188, 20);
-            this.rbtnScaling.TabIndex = 28;
-            this.rbtnScaling.TabStop = true;
-            this.rbtnScaling.Text = "Abilities/Items With Scaling";
-            this.rbtnScaling.UseVisualStyleBackColor = true;
-            this.rbtnScaling.CheckedChanged += new System.EventHandler(this.rbtnScaling_CheckedChanged);
-            // 
-            // btnR
-            // 
-            this.btnR.Location = new System.Drawing.Point(330, 78);
-            this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(75, 23);
-            this.btnR.TabIndex = 25;
-            this.btnR.Text = "R";
-            this.btnR.UseVisualStyleBackColor = true;
-            this.btnR.Click += new System.EventHandler(this.btnR_Click);
-            // 
-            // btnPassive
-            // 
-            this.btnPassive.Location = new System.Drawing.Point(6, 78);
-            this.btnPassive.Name = "btnPassive";
-            this.btnPassive.Size = new System.Drawing.Size(75, 23);
-            this.btnPassive.TabIndex = 27;
-            this.btnPassive.Text = "Passives";
-            this.btnPassive.UseVisualStyleBackColor = true;
-            this.btnPassive.Click += new System.EventHandler(this.btnPassive_Click);
-            // 
-            // btnW
-            // 
-            this.btnW.Location = new System.Drawing.Point(168, 78);
-            this.btnW.Name = "btnW";
-            this.btnW.Size = new System.Drawing.Size(75, 23);
-            this.btnW.TabIndex = 23;
-            this.btnW.Text = "W";
-            this.btnW.UseVisualStyleBackColor = true;
-            this.btnW.Click += new System.EventHandler(this.btnW_Click);
-            // 
-            // btnQ
-            // 
-            this.btnQ.Location = new System.Drawing.Point(87, 78);
-            this.btnQ.Name = "btnQ";
-            this.btnQ.Size = new System.Drawing.Size(75, 23);
-            this.btnQ.TabIndex = 26;
-            this.btnQ.Text = "Q";
-            this.btnQ.UseVisualStyleBackColor = true;
-            this.btnQ.Click += new System.EventHandler(this.btnQ_Click);
-            // 
-            // btnE
-            // 
-            this.btnE.Location = new System.Drawing.Point(249, 78);
-            this.btnE.Name = "btnE";
-            this.btnE.Size = new System.Drawing.Size(75, 23);
-            this.btnE.TabIndex = 24;
-            this.btnE.Text = "E";
-            this.btnE.UseVisualStyleBackColor = true;
-            this.btnE.Click += new System.EventHandler(this.btnE_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(608, 135);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 16);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "R Level:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(608, 109);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 16);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "E Level:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(605, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 16);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "W Level:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(608, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 16);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Q Level:";
-            // 
-            // nudRLevel
-            // 
-            this.nudRLevel.Location = new System.Drawing.Point(670, 133);
-            this.nudRLevel.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudRLevel.Name = "nudRLevel";
-            this.nudRLevel.Size = new System.Drawing.Size(120, 22);
-            this.nudRLevel.TabIndex = 18;
-            this.nudRLevel.ValueChanged += new System.EventHandler(this.nudRLevel_ValueChanged);
-            // 
-            // nudWLevel
-            // 
-            this.nudWLevel.Location = new System.Drawing.Point(670, 77);
-            this.nudWLevel.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudWLevel.Name = "nudWLevel";
-            this.nudWLevel.Size = new System.Drawing.Size(120, 22);
-            this.nudWLevel.TabIndex = 17;
-            this.nudWLevel.ValueChanged += new System.EventHandler(this.nudWLevel_ValueChanged);
-            // 
-            // nudELevel
-            // 
-            this.nudELevel.Location = new System.Drawing.Point(670, 105);
-            this.nudELevel.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudELevel.Name = "nudELevel";
-            this.nudELevel.Size = new System.Drawing.Size(120, 22);
-            this.nudELevel.TabIndex = 16;
-            this.nudELevel.ValueChanged += new System.EventHandler(this.nudELevel_ValueChanged);
-            // 
-            // nudQLevel
-            // 
-            this.nudQLevel.Location = new System.Drawing.Point(670, 49);
-            this.nudQLevel.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudQLevel.Name = "nudQLevel";
-            this.nudQLevel.Size = new System.Drawing.Size(120, 22);
-            this.nudQLevel.TabIndex = 15;
-            this.nudQLevel.ValueChanged += new System.EventHandler(this.nudQLevel_ValueChanged);
-            // 
-            // nudChampionLevel
-            // 
-            this.nudChampionLevel.Location = new System.Drawing.Point(670, 21);
-            this.nudChampionLevel.Maximum = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            this.nudChampionLevel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudChampionLevel.Name = "nudChampionLevel";
-            this.nudChampionLevel.Size = new System.Drawing.Size(120, 22);
-            this.nudChampionLevel.TabIndex = 14;
-            this.nudChampionLevel.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudChampionLevel.ValueChanged += new System.EventHandler(this.nudChampionLevel_ValueChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(557, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 16);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Champion Level:";
-            // 
-            // btnRemoveAll
-            // 
-            this.btnRemoveAll.Location = new System.Drawing.Point(128, 324);
-            this.btnRemoveAll.Name = "btnRemoveAll";
-            this.btnRemoveAll.Size = new System.Drawing.Size(104, 23);
-            this.btnRemoveAll.TabIndex = 11;
-            this.btnRemoveAll.Text = "Remove All";
-            this.btnRemoveAll.UseVisualStyleBackColor = true;
-            this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
-            // 
-            // lsboxChampItems
-            // 
-            this.lsboxChampItems.FormattingEnabled = true;
-            this.lsboxChampItems.ItemHeight = 16;
-            this.lsboxChampItems.Location = new System.Drawing.Point(15, 21);
-            this.lsboxChampItems.Name = "lsboxChampItems";
-            this.lsboxChampItems.Size = new System.Drawing.Size(217, 292);
-            this.lsboxChampItems.TabIndex = 10;
-            // 
-            // btnRemoveItem
-            // 
-            this.btnRemoveItem.Location = new System.Drawing.Point(15, 324);
-            this.btnRemoveItem.Name = "btnRemoveItem";
-            this.btnRemoveItem.Size = new System.Drawing.Size(104, 23);
-            this.btnRemoveItem.TabIndex = 9;
-            this.btnRemoveItem.Text = "Remove Item";
-            this.btnRemoveItem.UseVisualStyleBackColor = true;
-            this.btnRemoveItem.Click += new System.EventHandler(this.btnRemoveItem_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(290, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Champion:";
-            // 
-            // cboxChampion
-            // 
-            this.cboxChampion.FormattingEnabled = true;
-            this.cboxChampion.Items.AddRange(new object[] {
-            "-"});
-            this.cboxChampion.Location = new System.Drawing.Point(367, 21);
-            this.cboxChampion.Name = "cboxChampion";
-            this.cboxChampion.Size = new System.Drawing.Size(184, 24);
-            this.cboxChampion.TabIndex = 0;
-            this.cboxChampion.SelectedIndexChanged += new System.EventHandler(this.cboxChampion_SelectedIndexChanged);
-            // 
-            // lsboxItems
-            // 
-            this.lsboxItems.FormattingEnabled = true;
-            this.lsboxItems.ItemHeight = 16;
-            this.lsboxItems.Location = new System.Drawing.Point(37, 380);
-            this.lsboxItems.Name = "lsboxItems";
-            this.lsboxItems.Size = new System.Drawing.Size(474, 180);
-            this.lsboxItems.TabIndex = 9;
-            // 
-            // btnItemTuner
-            // 
-            this.btnItemTuner.Location = new System.Drawing.Point(517, 499);
-            this.btnItemTuner.Name = "btnItemTuner";
-            this.btnItemTuner.Size = new System.Drawing.Size(93, 23);
-            this.btnItemTuner.TabIndex = 83;
-            this.btnItemTuner.Text = "Item Tuner";
-            this.btnItemTuner.UseVisualStyleBackColor = true;
-            this.btnItemTuner.Click += new System.EventHandler(this.btnItemTuner_Click);
             // 
             // LeagueGoldEfficiency
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1408, 581);
-            this.Controls.Add(this.btnItemTuner);
+            this.Controls.Add(this.grpBoxItemStatsProvided);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.grpBoxItemControls);
+            this.Controls.Add(this.grpBoxMapSelector);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tBoxGoldCost);
             this.Controls.Add(this.lsboxItems);
-            this.Controls.Add(this.gboxChampion);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnMinimize);
-            this.Controls.Add(this.gboxSpecificChampion);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpBoxStatSelector);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tBoxLeaguePatch);
             this.Name = "LeagueGoldEfficiency";
             this.Text = "League Gold Efficiency Calculator";
             this.Load += new System.EventHandler(this.LeagueGoldEfficiency_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.gboxSpecificChampion.ResumeLayout(false);
-            this.gboxSpecificChampion.PerformLayout();
-            this.gboxChampion.ResumeLayout(false);
-            this.gboxChampion.PerformLayout();
-            this.gboxAbilityCalculations.ResumeLayout(false);
-            this.gboxAbilityCalculations.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudWLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudELevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudChampionLevel)).EndInit();
+            this.grpBoxStatSelector.ResumeLayout(false);
+            this.grpBoxStatSelector.PerformLayout();
+            this.grpBoxMapSelector.ResumeLayout(false);
+            this.grpBoxMapSelector.PerformLayout();
+            this.grpBoxItemControls.ResumeLayout(false);
+            this.grpBoxItemStatsProvided.ResumeLayout(false);
+            this.grpBoxItemStatsProvided.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1266,9 +1061,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBoxLeaguePatch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpBoxStatSelector;
         private System.Windows.Forms.CheckBox chkboxMagicPenetrationPercent;
         private System.Windows.Forms.CheckBox chkboxMagicResist;
         private System.Windows.Forms.CheckBox chkboxLethality;
@@ -1289,83 +1084,72 @@
         private System.Windows.Forms.CheckBox chkboxHealthRegen;
         private System.Windows.Forms.CheckBox chkboxHealth;
         private System.Windows.Forms.CheckBox chkboxCrticialStrikeChance;
-        private System.Windows.Forms.GroupBox gboxSpecificChampion;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.RadioButton rbtnDisable;
-        private System.Windows.Forms.RadioButton rbtnEnable;
-        private System.Windows.Forms.GroupBox gboxChampion;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboxChampion;
-        private System.Windows.Forms.Button btnRemoveAll;
-        private System.Windows.Forms.ListBox lsboxChampItems;
-        private System.Windows.Forms.Button btnRemoveItem;
-        private System.Windows.Forms.Button btnAddItem;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown nudRLevel;
-        private System.Windows.Forms.NumericUpDown nudWLevel;
-        private System.Windows.Forms.NumericUpDown nudELevel;
-        private System.Windows.Forms.NumericUpDown nudQLevel;
-        private System.Windows.Forms.NumericUpDown nudChampionLevel;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox gboxAbilityCalculations;
-        private System.Windows.Forms.Button btnR;
-        private System.Windows.Forms.Button btnPassive;
-        private System.Windows.Forms.Button btnW;
-        private System.Windows.Forms.Button btnQ;
-        private System.Windows.Forms.Button btnE;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label label335;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label lblCriticalStrikeChance;
-        private System.Windows.Forms.Label lblHealShieldPower;
-        private System.Windows.Forms.Label lblMagicPenetrationFlat;
-        private System.Windows.Forms.Label lblHealthRegen;
-        private System.Windows.Forms.Label lblHealth;
-        private System.Windows.Forms.Label lblMagicPenetrationPercent;
-        private System.Windows.Forms.Label lblLethality;
-        private System.Windows.Forms.Label lblArmorPenetrationPercent;
-        private System.Windows.Forms.Label lblMovementSpeed;
-        private System.Windows.Forms.Label lblOmnivamp;
-        private System.Windows.Forms.Label lblLifeSteal;
-        private System.Windows.Forms.Label lblAbilityHaste;
-        private System.Windows.Forms.Label lblAbilityPower;
-        private System.Windows.Forms.Label lblAttackSpeed;
-        private System.Windows.Forms.Label lblAttackDamage;
-        private System.Windows.Forms.Label lblManaRegen;
-        private System.Windows.Forms.Label lblMana;
-        private System.Windows.Forms.Label lblMagicResist;
-        private System.Windows.Forms.Label lblArmor;
-        private System.Windows.Forms.Label lblCriticalStrikeDamage;
-        private System.Windows.Forms.Label label47;
         private System.Windows.Forms.ListBox lsboxItems;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.RadioButton rbtnStats;
-        private System.Windows.Forms.RadioButton rbtnScaling;
-        private System.Windows.Forms.Button btnRuneTuner;
-        private System.Windows.Forms.Button btnRunes;
         private System.Windows.Forms.CheckBox chkBoxCriticalStrikeDamage;
-        private System.Windows.Forms.Button btnItemTuner;
+        private System.Windows.Forms.CheckBox chkBoxTenacity;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tBoxGoldCost;
+        private System.Windows.Forms.GroupBox grpBoxMapSelector;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox grpBoxItemControls;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnRemoveAll;
+        private System.Windows.Forms.Button btnRemoveAt;
+        private System.Windows.Forms.Button btnAddItem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox grpBoxItemStatsProvided;
+        private System.Windows.Forms.Label lblTenacity;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lblMovementSpeedPercent;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lblCriticalStrikeDamage;
+        private System.Windows.Forms.Label lblArmor;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblCriticalStrikeChance;
+        private System.Windows.Forms.Label lblMagicResist;
+        private System.Windows.Forms.Label lblHealShieldPower;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblMagicPenetrationFlat;
+        private System.Windows.Forms.Label lblMana;
+        private System.Windows.Forms.Label lblHealthRegen;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblManaRegen;
+        private System.Windows.Forms.Label lblHealth;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblAttackDamage;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label lblMagicPenetrationPercent;
+        private System.Windows.Forms.Label lblAttackSpeed;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label335;
+        private System.Windows.Forms.Label lblLethality;
+        private System.Windows.Forms.Label lblAbilityPower;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblArmorPenetrationPercent;
+        private System.Windows.Forms.Label lblAbilityHaste;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblMovementSpeed;
+        private System.Windows.Forms.Label lblLifeSteal;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblOmnivamp;
     }
 }
 
